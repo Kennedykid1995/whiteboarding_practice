@@ -23,7 +23,23 @@ function binarySearch(n, m){
         newArr = arr.splice(arr.indexOf(arr[i+1]))
       }    
     }
-    console.log(arr, newArr)
+    if(target > arr[0]){
+        console.log("larger")
+        let start = 0; 
+        let end = arr.length-1
+        let mid = Math.floor((start + end)/2);
+
+    }
+    if(target < newArr[newArr.length - 1]){
+        console.log("smaller")
+        let start = 0; 
+        let end = newArr.length-1
+        let mid = Math.floor((start + end)/2);
+
+    
+    }
   }
   
   shiftedArray([5,6,7,8,1,2,3,4], 3)
+  shiftedArray([5,6,7,8,2,3,4], 8)
+  shiftedArray([5,6,1,2,3,4], 1)
