@@ -134,3 +134,27 @@ function reverseArray(arr){
     }
 }
 reverseArray([1,2,3,4,5]); 
+
+
+//match stick house
+
+function matchStick(num){
+    //if num = 1 return 6; 
+    //a match stick hous eis made up of 6 matches
+    // once you add another mouse the total matches used to
+    //make that one would be one less than the regular so 5 sticks
+    //2 should equal 11 since the middle sticks are shared
+    // so take the initial num and subtract it by 1
+    //then take that number and subract it from the sum of num * 6;
+    console.log(num); 
+    if(num === 1) return 6;
+    let total = num * 6; 
+    let sub = num - 1; 
+    let houses = total - sub; 
+    console.log(houses)
+    return houses; 
+}
+matchStick(1)
+matchStick(2)
+matchStick(4)
+matchStick(87)
