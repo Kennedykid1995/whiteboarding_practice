@@ -96,3 +96,16 @@
 
 //Frequency Queries
 
+function countingLegs(x,y,z){
+    //x is going to be chickens
+    //y is going to be cows
+    //z is going to be pigs
+    //x will be the only one multiplied by 2
+    //y and z will be multipled by 4 
+    let chicken = x * 2; 
+    let cows = y * 4; 
+    let pigs = z * 4; 
+    console.log(chicken + cows + pigs)
+    return chicken + cows + pigs
+}
+countingLegs(2,3,5); 
