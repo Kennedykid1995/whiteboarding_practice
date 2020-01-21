@@ -116,3 +116,21 @@ function lastElement(arr){
     console.log(arr.pop())
 }
 lastElement([1,2,3,4]) 
+
+
+function concatName(first, last){
+    console.log(first + " " + last)
+}
+concatName("Keith", "Kennedy")
+
+//reverse array 
+
+function reverseArray(arr){
+    let reverse = []
+    while(arr.length){
+        // reverse.push(arr[arr.length-1]);
+        reverse.push(arr.pop()); 
+        console.log(reverse);
+    }
+}
+reverseArray([1,2,3,4,5]); 
