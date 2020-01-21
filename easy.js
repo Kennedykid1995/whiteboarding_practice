@@ -158,3 +158,29 @@ matchStick(1)
 matchStick(2)
 matchStick(4)
 matchStick(87)
+
+
+function nestingArr(arr1, arr2){
+    //we want to find the min and the max of both 
+    //arr 1 and arr2
+    //then we need to compare the mins and maxs
+    //if arr1's min is greater than arr2 min then that clears
+    // otherwise it is false
+    //then move onto the max
+    //if arr2's max is greater than arr1's max than it is true
+    //if not false
+    const minArr1 = Math.min(...arr1)
+    const minArr2 = Math.min(...arr2); 
+    const maxArr1 = Math.max(...arr1); 
+    const maxArr2 = Math.max(...arr2); 
+    if(minArr1 > minArr2 && maxArr1 < maxArr2){
+        return true;
+    }
+    else{
+        return false
+    }
+}
+console.log(nestingArr([1,2,3], [0,4]))
+console.log(nestingArr([4,5,6,7], [4,5]))
+console.log(nestingArr([2,3,4], [1,5]))
+console.log(nestingArr([9,9,8], [8,9]))
