@@ -109,3 +109,10 @@ function countingLegs(x,y,z){
     return chicken + cows + pigs
 }
 countingLegs(2,3,5); 
+
+
+function lastElement(arr){
+    console.log(arr[arr.length-1])
+    console.log(arr.pop())
+}
+lastElement([1,2,3,4]) 
