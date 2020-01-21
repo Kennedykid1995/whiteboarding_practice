@@ -184,3 +184,26 @@ console.log(nestingArr([1,2,3], [0,4]))
 console.log(nestingArr([4,5,6,7], [4,5]))
 console.log(nestingArr([2,3,4], [1,5]))
 console.log(nestingArr([9,9,8], [8,9]))
+
+
+
+
+//repeating letters
+
+function repeatingLetters(str){
+    //create a function that takes a string and 
+    //repeats each letter once
+    //ex hello => hheelllloo
+    //seperate the string into individual letters
+    // then for each occurence push the letter infront of the letter
+    let word = str.split(''); 
+    let arr = [];
+    for(let i = 0; i < word.length; i++){
+        console.log(word[i]); 
+        arr.push(word[i]);
+        arr.push(word[i]);
+        return arr;
+    }
+}
+repeatingLetters("hello"); 
+repeatingLetters("hello world")
