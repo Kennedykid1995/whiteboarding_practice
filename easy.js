@@ -246,3 +246,26 @@ function numInStr(arr){
     }
 }
 numInStr(["hi", "hi5", "big"])
+
+
+//Convience Store
+
+function convienceStore(change, amount){
+    //[quarters, dimes, nickels, pennies]
+    //we will need to gather each of the amounts multiply by the currency amount
+    //then with the amounts add then together and compare to the amount owed
+    quarters = change[0] * .25;
+    dimes = change[1] * .10; 
+    nickels = change[2] * .05; 
+    pennies = change[3] * .01; 
+    console.log(quarters, dimes, nickels, pennies);
+    totalChange = quarters + dimes + nickels + pennies;
+    console.log(totalChange) 
+    if(totalChange >= amount){
+        return true
+    } else{
+        return false
+    }
+}
+console.log(convienceStore([2,100,0,0], 14.11))
+console.log(convienceStore([0,0,20,5], 0.75))
