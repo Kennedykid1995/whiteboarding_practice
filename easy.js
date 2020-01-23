@@ -269,3 +269,24 @@ function convienceStore(change, amount){
 }
 console.log(convienceStore([2,100,0,0], 14.11))
 console.log(convienceStore([0,0,20,5], 0.75))
+
+//Match the Last Item
+
+function matchLast(arr){
+    let newWord=[]; 
+    let word = "";
+    let compare = arr[arr.length-1]
+    for(let i = 0; i < arr.length-1; i++){
+        console.log(arr[i]); 
+        newWord.push(arr[i]); 
+        let word = newWord.join("");
+        if(word === compare){
+            return true
+        }
+    }
+    return false
+}
+
+console.log(matchLast(["a", "b", "c", "abc"]))
+console.log(matchLast(["a", "b", "c", "ac"]))
+console.log(matchLast(["a", "b", "c", "d", "abcd"]))
