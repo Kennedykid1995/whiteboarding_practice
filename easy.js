@@ -207,3 +207,42 @@ function repeatingLetters(str){
 }
 repeatingLetters("hello"); 
 repeatingLetters("hello world")
+
+
+//Array of multiples
+
+function arrayOfMultiples(num, len){
+    //create an empty array
+    //loop through the length
+    //for each index in the length,
+    //multiply by the num and push into array
+    let arr = []; 
+    for(let i = 1; i <= len; i++){
+        let newNum = num * i; 
+        arr.push(newNum); 
+    }
+    return arr
+}
+arrayOfMultiples(7,5); 
+arrayOfMultiples(12,10); 
+arrayOfMultiples(17,6); 
+
+
+//numInStr
+
+function numInStr(arr){
+    //new arr
+    //regex collecting all numbers
+    let newArr = []; 
+    let regEx = /\d+/;
+    for(let i = 0; i < arr.length; i++){
+        console.log(arr[i].split(''));
+        for(let j = 0; j < arr[i].length; j++){
+            console.log(arr[i][j])
+            if(arr[i][j].match(regEx)){
+                console.log(arr[i])
+            }
+        } 
+    }
+}
+numInStr(["hi", "hi5", "big"])
