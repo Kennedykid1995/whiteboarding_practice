@@ -77,10 +77,6 @@ function towerHanoi(num){
     let towerTwo = [];
     let towerThree = [];
     let counter = 0; 
-    for(let i = 1; i <= num; i++){
-        towerOne.push(i)
-    }
-    
-    console.log(towerOne)
+   
 }
 towerHanoi(3); 
