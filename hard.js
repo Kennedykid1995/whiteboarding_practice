@@ -67,3 +67,20 @@ function sevenBoom(arr){
 // sevenBoom([1,2,3,4,7]); 
 console.log(sevenBoom([1,2,43,8,87]))
 console.log(sevenBoom([1,2,43,8,88]))
+
+function towerHanoi(num){
+    //there are three towers 
+    // a larger number can ever be above a smaller 
+    //must move all numbers to the third tower
+    //there empty arrays
+    let towerOne = [];
+    let towerTwo = [];
+    let towerThree = [];
+    let counter = 0; 
+    for(let i = 1; i <= num; i++){
+        towerOne.push(i)
+    }
+    
+    console.log(towerOne)
+}
+towerHanoi(3); 
